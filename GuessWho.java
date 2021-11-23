@@ -10,7 +10,7 @@ public class GuessWho {
     private final int guessLimit = 10;
     private boolean outofGuesses = false;
 	
-    public void GuessWho(String[] quest, String answer) {
+    public GuessWho(String[] quest, String answer) {
 	    name = answer;
 	    Quenstions[0] = quest[0];
 	    Quenstions[1] = quest[1];
