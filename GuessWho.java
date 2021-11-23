@@ -1,9 +1,9 @@
 
 import javax.swing.JOptionPane;
 public class GuessWho {
-    private String Questions[] = questions1;
+    private String Questions[];
     private String name;
-    private String who = "";
+    private String who;
     private int QuestionCount = 0;
     private int lives = 1;
     //edo vazoume xrono logika kati prepei na ginei import tha to vroume
@@ -16,8 +16,8 @@ public class GuessWho {
 	    System.out.println("Σας δίνονται σταδιακά 10 hints. Σύμφωνα με αυτά πρέπει να βρείτε το πρόσωπο που αποκρύπτεται.");
 	    System.out.println("Έχετε τρεις προσπάθειες.");
 	    System.out.println("Καλή Επιτυχία!");
-	
     }
+    
     public void startGuessing() {
 	    while(!guess.equals(secretWord)&& !outofGuesses) {
 		 if(lives<3 && /*timer>0)*/ {
