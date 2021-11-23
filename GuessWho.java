@@ -1,4 +1,3 @@
-
 import javax.swing.JOptionPane;
 public class GuessWho {
     private String Questions[10];
