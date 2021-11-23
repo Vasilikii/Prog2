@@ -1,7 +1,7 @@
 
 import javax.swing.JOptionPane;
 public class GuessWho {
-    private String Questions[];
+    private String Questions[10];
     private String name;
     private String who;
     private int QuestionCount = 0;
@@ -9,6 +9,20 @@ public class GuessWho {
     //edo vazoume xrono logika kati prepei na ginei import tha to vroume
     private final int guessLimit = 10;
     private boolean outofGuesses = false;
+	
+    public void GuessWho(String[] quest, String answer) {
+	    name = answer;
+	    Quenstions[0] = quest[0];
+	    Quenstions[1] = quest[1];
+	    Quenstions[2] = quest[2];
+	    Quenstions[3] = quest[3];
+	    Quenstions[4] = quest[4];
+	    Quenstions[5] = quest[5];
+	    Quenstions[6] = quest[6];
+	    Quenstions[7] = quest[7];
+	    Quenstions[8] = quest[8];
+	    Quenstions[9] = quest[9];
+    }	    
 
     public void printInstructions() {
 	    System.out.println("Η τελευταία δοκιμάσια απαιτεί να μαντέψετε το όνομα του μυθικού προσώπου");
